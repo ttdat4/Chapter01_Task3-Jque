@@ -1,0 +1,971 @@
+/*---------------------Point
+------------------------------------*/
+
+.c-point1 {
+    display: flex;
+    background-color: #fffdef;
+    max-width: 1860px;
+    flex-flow: column nowrap;
+    height: auto;
+    width: 100%;
+
+    @include sp {
+        max-width: 750px;
+        width: 100%;
+        padding: 5% 2%;
+    }
+
+    @include sp1 {
+
+        max-width: 315px;
+        width: 100%;
+        margin-top: -26%;
+
+    }
+
+    &__1 {
+        display: flex;
+        padding-left: 28.7%;
+        padding-top: 2.5%;
+
+        @include sp {
+            padding-left: 5.7%;
+            padding-top: 0.5%;
+
+        }
+
+        @include sp1 {
+            margin-left: -4%;
+        }
+
+        &--img {
+            img {
+                @include sp1 {
+                    max-width: 137%;
+                }
+            }
+        }
+
+        &--title {
+            font-family: "Sawarabi Mincho", serif;
+            padding-left: 30px;
+            margin-top: -1.7%;
+
+            h2 {
+                font-size: 3.6rem;
+                color: #115655;
+                font-weight: 500;
+                line-height: 1.75;
+                letter-spacing: 3px;
+
+                @include sp {
+                    margin-top: 5%;
+                }
+
+                @include sp1 {
+                    font-size: 2rem;
+                    margin-left: 0%;
+                    margin-top: 8%;
+                    letter-spacing: 2px;
+                }
+
+            }
+
+            .u-top {
+                padding-top: 1.7%;
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+
+                @include sp {
+                    margin-left: -27%;
+                    margin-top: 9%;
+                    line-height: calc(44.2pt/26pt);
+                }
+
+                @include sp1 {
+                    display: none;
+                }
+
+            }
+
+            .u-topmb {
+                padding-top: 1.7%;
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+                display: none;
+
+                @include sp {
+                    display: none;
+                    margin-left: -27%;
+                    margin-top: 9%;
+                    line-height: calc(44.2pt/26pt);
+                }
+
+                @include sp1 {
+                    display: block;
+                    font-size: 1.2rem;
+                    letter-spacing: 2px;
+                    margin-left: -31%;
+                    margin-top: 8%;
+                }
+
+            }
+
+
+            span {
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+            }
+        }
+    }
+
+    &__2 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px;
+    }
+}
+
+.c-point2 {
+
+    padding: 5px 0 90px;
+    max-width: 1860px;
+    width: 100%;
+    height: 350px;
+    background-color: #fffdef;
+    margin-top: -2.4%;
+
+    @include sp {
+        max-width: 750px;
+        height: auto;
+    }
+
+    @include sp1 {
+        height: 360px;
+    }
+
+    &__grid {
+        max-width: 1030px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 100px);
+
+        @include sp {
+            max-width: 630px;
+
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+
+        &--img {
+            position: relative;
+            max-width: 330px;
+            height: 330px;
+
+            @include sp {
+                max-width: 630px;
+                width: 100%;
+                height: 630px;
+                background-image: url("./assets/img/box1MB.png");
+                border-radius: 30px;
+            }
+
+            @include sp1 {
+                width: 100%;
+                background-image: none;
+                height: auto;
+                margin-top: 2%;
+            }
+
+            .is-border {
+                border-radius: 30px;
+
+                @include sp {
+
+                    display: none;
+                }
+
+                @include sp1 {
+                    display: block;
+                    height: 316px;
+                }
+            }
+
+            .u-btn {
+                position: absolute;
+                right: 6%;
+                bottom: 6%;
+
+                @include sp1 {
+                    max-width: 20%;
+                    bottom: 4.8%;
+                    right: 4.9%;
+                }
+            }
+
+            .c-bgbox:nth-child(1) {
+                display: block;
+            }
+
+            .c-bgbox {
+                display: none;
+                max-width: 290px;
+                height: 290px;
+                width: 100%;
+                position: absolute;
+                left: 6%;
+                top: 6%;
+                background-image: url("assets/img/bgBox.png");
+                border-radius: 26px;
+                font-family: "Sawarabi Mincho", serif;
+               
+
+                @include sp1 {
+                    display: block;
+                    top: 6%;
+                    left: 4.8%;
+                    border-radius: 20px;
+                    height: 284px;
+                }
+
+                &__text {
+                    @include sp1 {
+                        margin-top: -4%;
+                        margin-left: -7%;
+                    }
+
+                    h3 {
+
+
+                        color: #115655;
+                        font-size: 2.4rem;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        margin-top: 15%;
+
+                        @include sp1 {
+                            font-size: 1.5rem;
+                            /* letter-spacing: 2px; */
+                            padding-top: 5%;
+                            padding-left: 4%;
+                        }
+                    }
+
+                    p {
+
+                        font-size: 1.2rem;
+                        max-width: 200px;
+                        line-height: calc(21pt/12pt);
+                        letter-spacing: 1px;
+                        margin-left: 16%;
+                        margin-top: 2%;
+
+                        @include sp1 {
+                            margin-top: 7%;
+                            margin-left: 10%;
+                            font-size: 1.3rem;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+
+                    .u-line {
+                        padding-left: 41.5%;
+                        padding-top: 4%;
+
+                        @include sp1 {
+                            padding-left: 44.6%;
+                            padding-top: 6%;
+                        }
+                    }
+
+                    .u-btnbox {
+                        margin-top: 11%;
+                        margin-left: 16%;
+
+                        @include sp1 {
+                            max-width: 42%;
+                            margin-top: -1.4%;
+                            margin-left: 31.5%;
+                        }
+                    }
+
+                }
+
+            }
+
+          
+        }
+
+        &--img+&--img {
+            @include sp {
+                display: none;
+            }
+        }
+
+
+    }
+}
+
+.c-point3 {
+    display: flex;
+    background-color: #fffdef;
+    max-width: 1860px;
+    height: auto;
+    width: 100%;
+
+    @include sp {
+        max-width: 750px;
+        width: 100%;
+        padding: 5% 2%;
+    }
+
+    @include sp1 {
+        max-width: 315px;
+        width: 100%;
+        margin-top: 0%;
+    }
+
+
+
+    &__1 {
+        display: flex;
+        padding-left: 28.7%;
+        padding-top: 2.3%;
+
+        @include sp {
+            padding-left: 5.7%;
+            padding-top: 0.5%;
+
+        }
+
+        @include sp1 {
+            margin-left: -4%;
+        }
+
+
+        &--img {
+            img {
+                @include sp1 {
+                    max-width: 120%;
+                }
+            }
+        }
+
+        &--title {
+            font-family: "Sawarabi Mincho", serif;
+            padding-left: 30px;
+            margin-top: -2.7%;
+
+            h2 {
+                font-size: 3.6rem;
+                color: #115655;
+                font-weight: 500;
+                line-height: 1.75;
+                letter-spacing: 3px;
+
+                @include sp {
+                    margin-top: 5%;
+                }
+
+                @include sp1 {
+                    font-size: 2rem;
+                    letter-spacing: 2px;
+                    margin-left: -3%;
+                    margin-top: 10%;
+                }
+
+            }
+
+            .u-top {
+                padding-top: 2.9%;
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+
+                @include sp {
+                    margin-left: -27%;
+                    margin-top: 9%;
+                    line-height: calc(44.2pt/26pt);
+                }
+
+                @include sp1 {
+                    display: none;
+                }
+            }
+
+            .u-topmb {
+                padding-top: 1.7%;
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+                display: none;
+
+                @include sp {
+                    display: none;
+                    margin-left: -27%;
+                    margin-top: 9%;
+                    line-height: calc(44.2pt/26pt);
+                }
+
+                @include sp1 {
+                    display: block;
+                    font-size: 1.2rem;
+                    letter-spacing: 2px;
+                    margin-left: -35%;
+                    margin-top: 11%;
+                }
+
+            }
+
+            span {
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+            }
+        }
+    }
+
+
+}
+
+.c-point4 {
+
+    padding: 5px 0 90px;
+    max-width: 1860px;
+    width: 100%;
+    height: 350px;
+    background-color: #fffdef;
+    margin-top: -2.4%;
+
+    @include sp {
+        max-width: 750px;
+        height: auto;
+    }
+
+    @include sp1 {
+        height: 360px;
+    }
+
+
+
+    &__grid {
+        max-width: 1030px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 100px);
+
+        @include sp {
+            max-width: 630px;
+
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+
+        &--img {
+            position: relative;
+            max-width: 330px;
+            height: 330px;
+
+            @include sp {
+                max-width: 630px;
+                width: 100%;
+                height: 630px;
+                background-image: url("./assets/img/box2MB.png");
+                border-radius: 30px;
+            }
+
+            @include sp1 {
+                width: 100%;
+                background-image: none;
+                height: auto;
+                margin-top: 2%;
+            }
+
+            .is-border {
+                border-radius: 30px;
+
+                @include sp {
+
+                    display: none;
+                }
+
+                @include sp1 {
+                    display: block;
+                    height: 316px;
+                }
+            }
+
+            .u-btn {
+                position: absolute;
+                right: 6%;
+                bottom: 6%;
+
+                @include sp1 {
+                    max-width: 20%;
+                    bottom: 4.8%;
+                    right: 4.9%;
+                }
+            }
+
+            .c-bgbox {
+                display: none;
+                max-width: 290px;
+                height: 290px;
+                width: 100%;
+                position: absolute;
+                left: 6%;
+                top: 6%;
+                background-image: url("assets/img/bgBox.png");
+                border-radius: 26px;
+                font-family: "Sawarabi Mincho", serif;
+               
+
+                @include sp1 {
+                    display: block;
+                    top: 6%;
+                    left: 4.8%;
+                    border-radius: 20px;
+                    height: 284px;
+                }
+
+                &__text {
+                    @include sp1 {
+                        margin-top: -4%;
+                        margin-left: -7%;
+                    }
+
+                    h3 {
+
+
+                        color: #115655;
+                        font-size: 2.4rem;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        margin-top: 15%;
+                    }
+
+                    p {
+
+                        font-size: 1.2rem;
+                        max-width: 200px;
+                        line-height: calc(21pt/12pt);
+                        letter-spacing: 1px;
+                        margin-left: 16%;
+                        margin-top: 2%;
+                    }
+
+                    .u-line {
+                        padding-left: 41.5%;
+                        padding-top: 4%;
+                    }
+
+                    .u-btnbox {
+                        margin-top: 11%;
+                        margin-left: 16%;
+                    }
+
+                }
+
+            }
+        }
+
+        &--img+&--img {
+            @include sp {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.c-point5 {
+    display: flex;
+    background-color: #fffdef;
+    max-width: 1860px;
+    height: auto;
+    width: 100%;
+
+    @include sp {
+        max-width: 750px;
+        width: 100%;
+        padding: 5% 2%;
+    }
+
+    @include sp1 {
+        max-width: 315px;
+        width: 100%;
+        margin-top: 0%;
+    }
+
+
+
+    &__1 {
+        display: flex;
+        padding-left: 28.7%;
+        padding-top: 2.3%;
+
+        @include sp {
+            padding-left: 5.7%;
+            padding-top: 0.5%;
+
+        }
+
+        @include sp1 {
+            margin-left: -4%;
+        }
+
+
+        &--img {
+            img {
+                @include sp1 {
+                    max-width: 143%;
+                }
+            }
+        }
+
+        &--title {
+            font-family: "Sawarabi Mincho", serif;
+            padding-left: 30px;
+            margin-top: -2.7%;
+
+            h2 {
+                font-size: 3.6rem;
+                color: #115655;
+                font-weight: 500;
+                line-height: 1.75;
+                letter-spacing: 3px;
+
+                @include sp {
+                    margin-top: 5%;
+                }
+
+                @include sp1 {
+                    font-size: 2rem;
+                    letter-spacing: 2px;
+                    margin-left: 0%;
+                    margin-top: 9%;
+                }
+
+            }
+
+            .u-top {
+                padding-top: 2.9%;
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+
+                @include sp {
+                    margin-left: -27%;
+                    margin-top: 9%;
+                    line-height: calc(44.2pt/26pt);
+                }
+
+                @include sp1 {
+                    display: none;
+                }
+            }
+
+            .u-topmb {
+                padding-top: 1.7%;
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+                display: none;
+
+                @include sp {
+                    display: none;
+                    margin-left: -27%;
+                    margin-top: 9%;
+                    line-height: calc(44.2pt/26pt);
+                }
+
+                @include sp1 {
+                    display: block;
+                    font-size: 1.2rem;
+                    letter-spacing: 1.9px;
+                    margin-left: -30%;
+                    margin-top: 9%;
+                }
+
+            }
+
+            span {
+                letter-spacing: 1.5px;
+                font-size: 1.4rem;
+                line-height: 2;
+            }
+        }
+    }
+
+    &__2 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px;
+    }
+}
+
+
+.c-point6 {
+
+    padding: 5px 0 90px;
+    max-width: 1860px;
+    width: 100%;
+    height: 350px;
+    background-color: #fffdef;
+    margin-top: -2.4%;
+
+    @include sp {
+        max-width: 750px;
+        height: auto;
+    }
+
+    @include sp1 {
+        height: 360px;
+    }
+
+    &__grid {
+        max-width: 1030px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 100px);
+
+        @include sp {
+            max-width: 630px;
+
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        &--img {
+            position: relative;
+            max-width: 330px;
+            height: 330px;
+
+            @include sp {
+                max-width: 630px;
+                width: 100%;
+                height: 630px;
+                background-image: url("./assets/img/box3MB.png");
+                border-radius: 30px;
+            }
+
+            @include sp1 {
+                width: 100%;
+                background-image: none;
+                height: auto;
+                margin-top: 2%;
+            }
+
+
+            .is-border {
+                border-radius: 30px;
+
+                @include sp {
+
+                    display: none;
+                }
+
+                @include sp1 {
+                    display: block;
+                    height: 316px;
+                }
+            }
+
+            .u-btn {
+                position: absolute;
+                right: 6%;
+                bottom: 6%;
+
+                @include sp1 {
+                    max-width: 20%;
+                    bottom: 4.8%;
+                    right: 4.9%;
+                }
+            }
+
+            .c-bgbox {
+                display: none;
+                max-width: 290px;
+                height: 290px;
+                width: 100%;
+                position: absolute;
+                left: 6%;
+                top: 6%;
+                background-image: url("assets/img/bgBox.png");
+                border-radius: 26px;
+                font-family: "Sawarabi Mincho", serif;
+                
+
+                @include sp1 {
+                    display: block;
+                    top: 6%;
+                    left: 4.8%;
+                    border-radius: 20px;
+                    height: 284px;
+                }
+
+                &__text {
+                    @include sp1 {
+                        margin-top: -4%;
+                        margin-left: -7%;
+                    }
+
+                    h3 {
+
+
+                        color: #115655;
+                        font-size: 2.4rem;
+                        text-align: center;
+                        letter-spacing: 2px;
+                        margin-top: 15%;
+                    }
+
+                    p {
+
+                        font-size: 1.2rem;
+                        max-width: 200px;
+                        line-height: calc(21pt/12pt);
+                        letter-spacing: 1px;
+                        margin-left: 16%;
+                        margin-top: 2%;
+                    }
+
+                    .u-line {
+                        padding-left: 41.5%;
+                        padding-top: 4%;
+                    }
+
+                    .u-btnbox {
+                        margin-top: 11%;
+                        margin-left: 16%;
+                    }
+
+                }
+
+            }
+
+          
+
+        }
+
+        &--img+&--img {
+            @include sp {
+                display: none;
+            }
+        }
+    }
+}
+
+.c-point7 {
+    max-width: 1860px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fffdef;
+
+    @include sp1 {
+        height: 360px;
+    }
+
+    &__title {
+        font-family: "Sawarabi Mincho", serif;
+        text-align: center;
+        color: #176b6a;
+        font-size: 1.8rem;
+        font-weight: 100;
+        letter-spacing: 6px;
+        padding-top: 2.18%;
+
+        @include sp {
+            font-size: 3.2rem;
+            line-height: calc(61.2pt/36pt);
+            letter-spacing: 2px;
+        }
+
+        @include sp1 {
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            margin-top: -18%;
+        }
+    }
+
+    &__grid {
+        max-width: 1100px;
+        width: 100%;
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, 100px);
+        margin: 0 auto;
+        margin-top: 2.4%;
+
+        @include sp {
+            max-width: 630px;
+            row-gap: 25%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include sp1 {
+            max-width: 310px;
+            row-gap: 0%;
+            column-gap: 0%;
+            margin-left: 4%;
+            margin-top: 7%;
+            grid-template-rows: repeat(2, 79px);
+        }
+    }
+
+    &__subtitle {
+        font-family: "Sawarabi Mincho", serif;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: -2.5%;
+
+        @include sp {
+            max-width: 630px;
+            width: 100%;
+            margin: auto;
+            margin-top: 17%;
+            font-size: 2.6rem;
+            line-height: 1.7;
+        }
+
+        @include sp1 {
+            width: 100%;
+            margin-top: -1.8%;
+            letter-spacing: 1px;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__img {
+        width: 100%;
+
+        @include sp1 {
+            max-width: 85%;
+        }
+    }
+}
+
+/*---------------------------------------
+----------------------------------*/
